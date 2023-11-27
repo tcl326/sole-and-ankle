@@ -27,11 +27,21 @@ const Header = () => {
 };
 
 const MainHeader = styled.div`
-  padding: 0 32px;
+  padding: 16px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  display: flex;
+  height: 72px;
+  align-items: baseline;
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-content: center;
+  gap: 48px; 
+  height: fit-content;
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;
